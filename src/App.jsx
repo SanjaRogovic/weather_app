@@ -17,7 +17,8 @@ import {
   BsWind,
   BsExclamationSquareFill,
 } from "react-icons/bs";
-import { TbMoodNeutralFilled, TbTemperatureCelsius } from "react-icons/tb";
+import { TbMist } from "react-icons/tb";
+import { TbTemperatureCelsius } from "react-icons/tb";
 import { ImSpinner8 } from "react-icons/im";
 
 //open weather map api
@@ -123,7 +124,7 @@ function App() {
       case "Thunderstorm":
         icon = <IoMdThunderstorm />;
       case "Mist":
-        icon = <BsEye />;
+        icon = <TbMist />;
         break;
       default:
         icon = <BsExclamationSquareFill />;
@@ -136,7 +137,7 @@ function App() {
   // console.log("Icon:", icon);
 
   return (
-    <div className="w-full h-screen bg-gradient-to-r from-sky-300 to-indigo-400 bg-no-repeat bg-cover bg-center flex flex-col items-center justify-center px-4 lg:px-0">
+    <div className="w-full h-screen bg-gradient-to-r from-indigo-700 via-cyan-500 to-slate-700 bg-no-repeat bg-cover bg-center flex flex-col items-center justify-center px-4 lg:px-0">
       <>
 
       {
