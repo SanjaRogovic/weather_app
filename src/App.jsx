@@ -22,7 +22,7 @@ import { TbTemperatureCelsius } from "react-icons/tb";
 import { ImSpinner8 } from "react-icons/im";
 
 //open weather map api
-const API_KEY = "73637129bc96ba0d18be0f8f4db16bdf";
+const API_KEY = import.meta.env.VITE_API_KEY
 
 function App() {
   const [data, setData] = useState(null);
